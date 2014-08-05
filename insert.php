@@ -10,6 +10,7 @@ $username     = encrypt($username_raw);
 $insert = ORM::for_table('usernames')->create();
 
 $insert->username     = $username;
+// proof that it all works
 $insert->username_raw = $username_raw;
 
 $insert->save();
